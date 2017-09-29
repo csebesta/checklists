@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.2)  28 SEP 2017 22:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.2)  28 SEP 2017 22:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -597,8 +597,7 @@ Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
-))
-No file normal.aux.
+)) (./normal.aux)
 \openout1 = `normal.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/EBGaramond-Maths/m/it on input li
@@ -667,14 +666,14 @@ LaTeX Font Info:    Font shape `T1/EBGaramond-OsF/m/n' will be
 * \headsep=25.0pt
 * \topskip=11.0pt
 * \footskip=30.0pt
-* \marginparwidth=59.0pt
+* \marginparwidth=4.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
 * \skip\footins=10.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
-* \@twocolumnfalse
+* \@twocolumntrue
 * \@twosidefalse
 * \@mparswitchfalse
 * \@reversemarginfalse
@@ -684,19 +683,21 @@ LaTeX Font Info:    Font shape `T1/EBGaramond-OsF/m/n' will be
 \c@mv@boldtabular=\count92
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./normal.aux) ) 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+] (./normal.aux) ) 
 Here is how much of TeX's memory you used:
- 2320 strings out of 494953
- 33133 string characters out of 6180978
- 85171 words of memory out of 5000000
+ 2322 strings out of 494953
+ 33155 string characters out of 6180978
+ 85185 words of memory out of 5000000
  5601 multiletter control sequences out of 15000+600000
  7161 words of font info for 18 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 34i,4n,65p,249b,113s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/shar
-e/texlive/texmf-dist/fonts/enc/dvips/ebgaramond/ebgm_iymieh.enc}</usr/share/tex
-live/texmf-dist/fonts/type1/public/ebgaramond/EBGaramond12-Regular.pfb>
-Output written on normal.pdf (1 page, 47368 bytes).
+ 34i,4n,65p,249b,107s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ebgaramond/ebg
+m_iymieh.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/ebgaramond/EBGar
+amond12-Regular.pfb>
+Output written on normal.pdf (1 page, 47367 bytes).
 PDF statistics:
  13 PDF objects out of 1000 (max. 8388607)
  8 compressed objects within 1 object stream
