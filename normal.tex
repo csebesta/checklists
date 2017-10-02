@@ -19,10 +19,8 @@
 
 \renewcommand{\sfdefault}{phv} % Helvetica
 
-\newcommand*{\protitle}{\Large\textsf}
-
-%\newcommand*{\proitem}
-% Two arguments, item and state, separated by dots
+\newcommand*{\protitle}[1]{{\Large\sf#1}} % Procedure title
+\newcommand*{\proitem}[2]{#1\dotfill#2} % Item and state
 
 % ----------------------------------------
 % Main Document
@@ -32,9 +30,12 @@
 \begin{center}
 
 	% Enclosure in brackets neccessary to isolate text size
-	{\protitle{Normal Procedures}}
+	\protitle{Normal Procedures}
 
-	this and that
+	\vspace{0.1in}
+
+	\proitem{Landing Gear}{UP}\\
+	\proitem{Elevator Trim}{NOSE HEAVY}
 
 \end{center}
 
