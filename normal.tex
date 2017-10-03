@@ -4,77 +4,78 @@
 % Packages
 
 \usepackage[utf8]{inputenc}
-\usepackage{geometry}
+\usepackage[includehead,includefoot]{geometry}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
 \usepackage{multicol}
 \usepackage{textcomp}
 
 \usepackage{dejavu}
-%\usepackage[default,osfigures,scale=0.95]{opensans}
-%\usepackage{paratype}
-%\usepackage{ebgaramond-maths}
 \usepackage[T1]{fontenc}
 
 % ----------------------------------------
 % Document Settings
 
 \geometry{margin=0.5in} % Margins
-\linespread{1} % Line spacing
 \setlength{\columnsep}{0.5in} % Column separation
 
 % ----------------------------------------
 % Commands
 
-%\renewcommand{\sfdefault}{phv} % Helvetica
-%\renewcommand{\sfdefault}
-
-\newcommand*{\doctitle}[1]{{\Huge\sf#1}} % Document title
+\newcommand*{\doctitle}[1]{\centering{\Huge\sf#1}} % Document title
 \newcommand*{\protitle}[1]{{\Large\sf#1}} % Procedure title
 \newcommand*{\proitem}[2]{\item#1\dotfill#2} % Item and state
 
-\newcommand*{\separator}{\noindent\rule{\textwidth}{1pt}\vspace{0.25in}}
-
-\newenvironment{prolist}[1]
+\newenvironment*{prolist}[1] % Procedure list
 	{\begin{center}
 	\protitle{#1}
-	\begin{enumerate}}
+	\begin{enumerate}[noitemsep]}
 	{\end{enumerate}
 	\end{center}}
-	
-	
+
+% ----------------------------------------
+% Header
+
+\pagestyle{fancy} % Use fancyhdr package
+\lhead{\sf\MakeUppercase{p-51 mustang}} % Aircraft
+\rhead{\tt\thepage} % Tt font differentiates zero with a dot
+\renewcommand{\headrulewidth}{1pt} % Line width
+
+% ----------------------------------------
+% Footer
+
+\fancyfoot{} % Empty footer
+
+% ----------------------------------------
+% Main Document
+
+\begin{document}
 
 % ----------------------------------------
 % Normal Procedures
 
-\begin{document}
-
-\separator
-
-\centering
-
-\doctitle{NORMAL PROCEDURES}
+%\doctitle{NORMAL PROCEDURES}
 
 	\begin{multicols}{2}
 
 	% === Preflight ===
 	\begin{prolist}{PREFLIGHT}
-		\proitem{this}{That}
+		\proitem{Flaps}{up}
+		\proitem{Carbureator air}{forward/full}
 	\end{prolist}
 
-	%\begin{enumerate}
-	%	\item\proitem{This}{up} 
-	%\end{enumerate}
-
-	%% === Before Starting Engine ===
-	%\protitle{BEFORE START}\\
-	%\vspace{0.1in}
-	%\proitem{Flaps}{up}\\
-	%\proitem{Elevator trim}{5\textdegree\ Right}\\
-	%\proitem{Elevator trim}{Nose Heavy}
+	% === Before Starting Engine ===
+	\begin{prolist}{BEFORE START}
+		\proitem{Flaps}{up}
+		\proitem{Elevator trim}{5\textdegree\ Right}
+		\proitem{Elevator trim}{Nose Heavy}
+	\end{prolist}
 
 	% === Taxi ===
 	\begin{prolist}{TAXI}
-		\proitem{this}{that}
+		\proitem{This}{that}
 	\end{prolist}
 
 	\end{multicols}
+
 \end{document}
