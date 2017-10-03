@@ -8,24 +8,39 @@
 \usepackage{multicol}
 \usepackage{textcomp}
 
+\usepackage{dejavu}
+%\usepackage[default,osfigures,scale=0.95]{opensans}
+%\usepackage{paratype}
 %\usepackage{ebgaramond-maths}
-%\usepackage[T1]{fontenc}
+\usepackage[T1]{fontenc}
 
 % ----------------------------------------
 % Document Settings
 
-\geometry{margin=0.5in} % Set all margins to 0.5 inches
+\geometry{margin=0.5in} % Margins
+\linespread{1} % Line spacing
+\setlength{\columnsep}{0.5in} % Column separation
 
 % ----------------------------------------
 % Commands
 
 %\renewcommand{\sfdefault}{phv} % Helvetica
+%\renewcommand{\sfdefault}
 
 \newcommand*{\doctitle}[1]{{\Huge\sf#1}} % Document title
 \newcommand*{\protitle}[1]{{\Large\sf#1}} % Procedure title
-\newcommand*{\proitem}[2]{#1\dotfill#2} % Item and state
+\newcommand*{\proitem}[2]{\item#1\dotfill#2} % Item and state
 
-\newcommand*{\separator}{\noindent\rule{\textwidth}{1pt}\vspace{0.5in}}
+\newcommand*{\separator}{\noindent\rule{\textwidth}{1pt}\vspace{0.25in}}
+
+\newenvironment{prolist}[1]
+	{\begin{center}
+	\protitle{#1}
+	\begin{enumerate}}
+	{\end{enumerate}
+	\end{center}}
+	
+	
 
 % ----------------------------------------
 % Normal Procedures
@@ -41,14 +56,25 @@
 	\begin{multicols}{2}
 
 	% === Preflight ===
-	\protitle{PREFLIGHT}
+	\begin{prolist}{PREFLIGHT}
+		\proitem{this}{That}
+	\end{prolist}
 
-	% === Before Starting Engine ===
-	\protitle{BEFORE STARTING ENGINE}\\
-	\vspace{0.1in}
-	\proitem{Flaps}{up}\\
-	\proitem{Elevator trim}{5\textdegree\ Right}\\
-	\proitem{Elevator trim}{Nose Heavy}
+	%\begin{enumerate}
+	%	\item\proitem{This}{up} 
+	%\end{enumerate}
+
+	%% === Before Starting Engine ===
+	%\protitle{BEFORE START}\\
+	%\vspace{0.1in}
+	%\proitem{Flaps}{up}\\
+	%\proitem{Elevator trim}{5\textdegree\ Right}\\
+	%\proitem{Elevator trim}{Nose Heavy}
+
+	% === Taxi ===
+	\begin{prolist}{TAXI}
+		\proitem{this}{that}
+	\end{prolist}
+
 	\end{multicols}
-
 \end{document}
