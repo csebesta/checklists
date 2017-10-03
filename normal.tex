@@ -1,13 +1,15 @@
-\documentclass[11pt,twocolumn,letterpaper]{article}
+\documentclass[11pt,letterpaper]{article}
 
 % ----------------------------------------
 % Packages
 
 \usepackage[utf8]{inputenc}
 \usepackage{geometry}
+\usepackage{multicol}
+\usepackage{textcomp}
 
-\usepackage{ebgaramond-maths}
-\usepackage[T1]{fontenc}
+%\usepackage{ebgaramond-maths}
+%\usepackage[T1]{fontenc}
 
 % ----------------------------------------
 % Document Settings
@@ -17,25 +19,36 @@
 % ----------------------------------------
 % Commands
 
-\renewcommand{\sfdefault}{phv} % Helvetica
+%\renewcommand{\sfdefault}{phv} % Helvetica
 
+\newcommand*{\doctitle}[1]{{\Huge\sf#1}} % Document title
 \newcommand*{\protitle}[1]{{\Large\sf#1}} % Procedure title
 \newcommand*{\proitem}[2]{#1\dotfill#2} % Item and state
 
+\newcommand*{\separator}{\noindent\rule{\textwidth}{1pt}\vspace{0.5in}}
+
 % ----------------------------------------
-% Main Document
+% Normal Procedures
 
 \begin{document}
 
-\begin{center}
+\separator
 
-	\protitle{Normal Procedures}
-	
+\centering
+
+\doctitle{NORMAL PROCEDURES}
+
+	\begin{multicols}{2}
+
+	% === Preflight ===
+	\protitle{PREFLIGHT}
+
+	% === Before Starting Engine ===
+	\protitle{BEFORE STARTING ENGINE}\\
 	\vspace{0.1in}
-
-	\proitem{Landing Gear}{UP}\\
-	\proitem{Elevator Trim}{NOSE HEAVY}
-
-\end{center}
+	\proitem{Flaps}{up}\\
+	\proitem{Elevator trim}{5\textdegree\ Right}\\
+	\proitem{Elevator trim}{Nose Heavy}
+	\end{multicols}
 
 \end{document}
