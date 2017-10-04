@@ -21,9 +21,26 @@
 % ----------------------------------------
 % Commands
 
+% Variables
+\newcommand*{\aircraft}{p-51d mustang} % Aircraft name
+\newcommand*{\doctitle}{normal procedures} % Document title
+\newcommand*{\pagename}{page \thepage} % Page name
+
 % Header item formatting
-\newcommand*{\doctitle}[1]{\sf\MakeUppercase#1} % Document title
-\newcommand*{\pagtitle}
+\newcommand*{\head}[3]
+	{
+	\lhead{\sf\MakeUppercase#1}
+	\chead{\sf\MakeUppercase#2}
+	\rhead{\sf\MakeUppercase#3}
+	}
+
+% Footer item formatting
+\newcommand*{\foot}[3]
+	{
+	\lfoot{\sf\MakeUppercase#1}
+	\cfoot{\sf\MakeUppercase#2}
+	\rfoot{\sf\MakeUppercase#3}
+	}
 
 % Title and list item formatting
 \newcommand*{\protitle}[1]{{\Large\sf#1}} % Procedure title
@@ -31,37 +48,59 @@
 
 % Procedure list formatting
 \newenvironment*{prolist}[1]
-	{\begin{center}
+	{
+	\begin{center}
 	\protitle{#1}
-	\begin{enumerate}[noitemsep]}
-	{\end{enumerate}
-	\end{center}}
-
-% ----------------------------------------
-% Header
-
-\pagestyle{fancy} % Use fancyhdr package
-\lhead{\sf\MakeUppercase{p-51d mustang}} % Aircraft
-\chead{\sf\MakeUppercase{normal procedures}} % Document title
-\rhead{\sf\MakeUppercase{page} \thepage} % Page number
-\renewcommand{\headrulewidth}{1pt} % Line width
-
-% ----------------------------------------
-% Footer
-
-\lfoot{\sf\MakeUppercase{p-51d mustang}} % Aircraft
-\cfoot{\sf\MakeUppercase{normal procedures}} % Document title
-\rfoot{\sf\MakeUppercase{page} \thepage} % Page number
-\renewcommand{\footrulewidth}{1pt} % Line width
-%\fancyfoot{} % Empty footer
+	\begin{itemize}[noitemsep]
+	}
+	{
+	\end{itemize}
+	\end{center}
+	}
 
 % ----------------------------------------
 % Preamble
+
+\pagestyle{fancy} % Use fancyhdr package
+
+% ----------------------------------------
+% Header and Footer
+
+\head{\aircraft}{\doctitle}{\pagename} % Header
+\renewcommand{\headrulewidth}{1pt} % Line width
+
+\foot{\aircraft}{\doctitle}{\pagename} % Footer
+\renewcommand{\footrulewidth}{1pt} % Line width
 
 % ----------------------------------------
 % Main Document
 
 \begin{document}
+
+% ----------------------------------------
+% Title Page
+
+\begin{titlepage}
+
+	\sf
+
+	\centering
+
+	{\Huge\MakeUppercase{\doctitle}}
+
+	\vspace{0.1in}
+
+	{\Huge\MakeUppercase{\aircraft}}
+
+	\vspace{1in}
+
+	\MakeUppercase{Chad Sebesta}
+
+	\MakeUppercase{\today}
+
+	\thispagestyle{empty} % Remove page number
+
+\end{titlepage}
 
 % ----------------------------------------
 % Normal Procedures
@@ -78,6 +117,8 @@
 		\proitem{Elevator trim}{5\textdegree\ Right}
 		\proitem{Elevator trim}{Nose Heavy}
 	\end{prolist}
+
+	\newpage
 
 	% === Starting Engine ===
 	\begin{prolist}{STARTING ENGINE}
