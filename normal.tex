@@ -7,7 +7,6 @@
 \usepackage[includehead,includefoot]{geometry}
 \usepackage{enumitem}
 \usepackage{fancyhdr}
-\usepackage{multicol}
 \usepackage{textcomp}
 
 \usepackage{dejavu}
@@ -22,11 +21,16 @@
 % ----------------------------------------
 % Commands
 
-\newcommand*{\doctitle}[1]{\centering{\Huge\sf#1}} % Document title
+% Header item formatting
+\newcommand*{\doctitle}[1]{\sf\MakeUppercase#1} % Document title
+\newcommand*{\pagtitle}
+
+% Title and list item formatting
 \newcommand*{\protitle}[1]{{\Large\sf#1}} % Procedure title
 \newcommand*{\proitem}[2]{\item#1\dotfill#2} % Item and state
 
-\newenvironment*{prolist}[1] % Procedure list
+% Procedure list formatting
+\newenvironment*{prolist}[1]
 	{\begin{center}
 	\protitle{#1}
 	\begin{enumerate}[noitemsep]}
@@ -37,7 +41,7 @@
 % Header
 
 \pagestyle{fancy} % Use fancyhdr package
-\lhead{\sf\MakeUppercase{p-51 mustang}} % Aircraft
+\lhead{\sf\MakeUppercase{p-51d mustang}} % Aircraft
 \chead{\sf\MakeUppercase{normal procedures}} % Document title
 \rhead{\sf\MakeUppercase{page} \thepage} % Page number
 \renewcommand{\headrulewidth}{1pt} % Line width
@@ -45,7 +49,14 @@
 % ----------------------------------------
 % Footer
 
-\fancyfoot{} % Empty footer
+\lfoot{\sf\MakeUppercase{p-51d mustang}} % Aircraft
+\cfoot{\sf\MakeUppercase{normal procedures}} % Document title
+\rfoot{\sf\MakeUppercase{page} \thepage} % Page number
+\renewcommand{\footrulewidth}{1pt} % Line width
+%\fancyfoot{} % Empty footer
+
+% ----------------------------------------
+% Preamble
 
 % ----------------------------------------
 % Main Document
@@ -54,10 +65,6 @@
 
 % ----------------------------------------
 % Normal Procedures
-
-%\doctitle{NORMAL PROCEDURES}
-
-	%\begin{multicols}{2}
 
 	% === Preflight ===
 	\begin{prolist}{PREFLIGHT}
@@ -79,12 +86,9 @@
 		\proitem{Elevator trim}{Nose Heavy}
 	\end{prolist}
 
-
 	% === Taxi ===
 	\begin{prolist}{TAXI}
 		\proitem{This}{that}
 	\end{prolist}
-
-	%\end{multicols}
 
 \end{document}
