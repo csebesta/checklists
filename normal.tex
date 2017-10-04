@@ -1,4 +1,4 @@
-\documentclass[11pt,letterpaper]{article}
+\documentclass[11pt,letterpaper,twocolumn]{article}
 
 % ----------------------------------------
 % Packages
@@ -38,7 +38,8 @@
 
 \pagestyle{fancy} % Use fancyhdr package
 \lhead{\sf\MakeUppercase{p-51 mustang}} % Aircraft
-\rhead{\tt\thepage} % Tt font differentiates zero with a dot
+\chead{\sf\MakeUppercase{normal procedures}} % Document title
+\rhead{\sf\MakeUppercase{page} \thepage} % Page number
 \renewcommand{\headrulewidth}{1pt} % Line width
 
 % ----------------------------------------
@@ -56,7 +57,7 @@
 
 %\doctitle{NORMAL PROCEDURES}
 
-	\begin{multicols}{2}
+	%\begin{multicols}{2}
 
 	% === Preflight ===
 	\begin{prolist}{PREFLIGHT}
@@ -65,17 +66,25 @@
 	\end{prolist}
 
 	% === Before Starting Engine ===
-	\begin{prolist}{BEFORE START}
+	\begin{prolist}{BEFORE STARTING ENGINE}
 		\proitem{Flaps}{up}
 		\proitem{Elevator trim}{5\textdegree\ Right}
 		\proitem{Elevator trim}{Nose Heavy}
 	\end{prolist}
+
+	% === Starting Engine ===
+	\begin{prolist}{STARTING ENGINE}
+		\proitem{Flaps}{up}
+		\proitem{Elevator trim}{5\textdegree\ Right}
+		\proitem{Elevator trim}{Nose Heavy}
+	\end{prolist}
+
 
 	% === Taxi ===
 	\begin{prolist}{TAXI}
 		\proitem{This}{that}
 	\end{prolist}
 
-	\end{multicols}
+	%\end{multicols}
 
 \end{document}
