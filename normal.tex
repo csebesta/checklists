@@ -9,7 +9,13 @@
 \usepackage{fancyhdr}
 \usepackage{textcomp}
 
-\usepackage{dejavu}
+\usepackage{dejavu} % Current choice
+%\usepackage[defaultsans]{droidsans} %% Possible second choice
+%\usepackage[default]{gillius}
+%\usepackage[default]{raleway} % Too stylistic
+%\usepackage[sfdefault]{cabin} % Too heavy
+%\usepackage[default]{cantarell} % Too heavy
+%\usepackage{helvet} % Possible first choice
 \usepackage[T1]{fontenc}
 
 % ----------------------------------------
@@ -43,18 +49,18 @@
 	}
 
 % Title and list item formatting
-\newcommand*{\protitle}[1]{{\Large\sf#1}} % Procedure title
-\newcommand*{\proitem}[2]{\item#1\dotfill#2} % Item and state
+\newcommand*{\protitle}[1]{{\sf\Large\MakeUppercase{#1}}} % Procedure title
+\newcommand*{\proitem}[2]{\sf\item#1\dotfill#2} % Item and state
 
 % Procedure list formatting
 \newenvironment*{prolist}[1]
 	{
 	\begin{center}
 	\protitle{#1}
-	\begin{itemize}[noitemsep]
+	\begin{enumerate}[noitemsep]
 	}
 	{
-	\end{itemize}
+	\end{enumerate}
 	\end{center}
 	}
 
@@ -106,7 +112,7 @@
 % Normal Procedures
 
 	% === Preflight ===
-	\begin{prolist}{PREFLIGHT}
+	\begin{prolist}{BEFORE ENTERING COCKPIT}
 		\proitem{Flaps}{up}
 		\proitem{Carbureator air}{forward/full}
 	\end{prolist}
@@ -114,21 +120,41 @@
 	% === Before Starting Engine ===
 	\begin{prolist}{BEFORE STARTING ENGINE}
 		\proitem{Flaps}{up}
-		\proitem{Elevator trim}{5\textdegree\ Right}
-		\proitem{Elevator trim}{Nose Heavy}
+		\proitem{Carbureator air}{forward full}
+		\proitem{Rudder trim}{5\textdegree\ right}
+		\proitem{Elevator trim}{2\textdegree\ nose heavy}
+		\proitem{Throttle}{1in open}
+		\proitem{RPM}{forward full}
+		\proitem{Fuel boost}{on}
+		\proitem{Magnetos}{both}
+		\proitem{Generator}{on}
+		\proitem{Battery}{on}
 	\end{prolist}
 
-	\newpage
+	% === Before Starting Engine ===
+	\begin{prolist}{BEFORE STARTING ENGINE}
+		\proitem{Flaps}{UP}
+		\proitem{Carbureator air}{FORWARD FULL}
+		\proitem{Rudder trim}{5\textdegree\ RIGHT}
+		\proitem{Elevator trim}{2\textdegree\ NOSE HEAVY}
+		\proitem{Throttle}{1IN OPEN}
+		\proitem{RPM}{FORWARD FULL}
+		\proitem{Fuel boost}{ON}
+		\proitem{Magnetos}{BOTH}
+		\proitem{Generator}{ON}
+		\proitem{Battery}{ON}
+	\end{prolist}
+
 
 	% === Starting Engine ===
 	\begin{prolist}{STARTING ENGINE}
-		\proitem{Flaps}{up}
-		\proitem{Elevator trim}{5\textdegree\ Right}
-		\proitem{Elevator trim}{Nose Heavy}
+		\proitem{Parking brake}{set}
+		\proitem{Elevator trim}{5\textdegree\ right}
+		\proitem{Elevator trim}{2\textdegree\ nose heavy}
 	\end{prolist}
 
-	% === Taxi ===
-	\begin{prolist}{TAXI}
+	% === Before Takeoff ===
+	\begin{prolist}{BEFORE TAKEOFF}
 		\proitem{This}{that}
 	\end{prolist}
 

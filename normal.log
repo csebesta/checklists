@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.2)  3 OCT 2017 22:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.2)  4 OCT 2017 23:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -560,27 +560,27 @@ LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 )) (./normal.aux)
 \openout1 = `normal.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 78.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 78.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 84.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 84.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    ... okay on input line 84.
 LaTeX Font Info:    Try loading font information for T1+DejaVuSerif-TLF on inpu
-t line 78.
+t line 84.
 
 (/usr/share/texlive/texmf-dist/tex/latex/dejavu/T1DejaVuSerif-TLF.fd
 File: T1DejaVuSerif-TLF.fd 2011/06/01 Font definitions for T1/DejaVuSerif-TLF.
@@ -620,19 +620,18 @@ File: T1DejaVuSerif-TLF.fd 2011/06/01 Font definitions for T1/DejaVuSerif-TLF.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Try loading font information for T1+DejaVuSans-TLF on input
- line 85.
+ line 91.
 (/usr/share/texlive/texmf-dist/tex/latex/dejavu/T1DejaVuSans-TLF.fd
 File: T1DejaVuSans-TLF.fd 2011/10/30 Font definitions for T1/DejaVuSans-TLF.
 ) [1
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for TS1+DejaVuSerif-TLF on inp
-ut line 110.
+LaTeX Font Info:    Try loading font information for TS1+DejaVuSans-TLF on inpu
+t line 124.
 
-(/usr/share/texlive/texmf-dist/tex/latex/dejavu/TS1DejaVuSerif-TLF.fd
-File: TS1DejaVuSerif-TLF.fd 2011/06/01 Font definitions for TS1/DejaVuSerif-TLF
-.
+(/usr/share/texlive/texmf-dist/tex/latex/dejavu/TS1DejaVuSans-TLF.fd
+File: TS1DejaVuSans-TLF.fd 2011/10/30 Font definitions for TS1/DejaVuSans-TLF.
 )
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -642,24 +641,24 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [1
 
+
 ] (./normal.aux) ) 
 Here is how much of TeX's memory you used:
  2331 strings out of 494953
- 31979 string characters out of 6180978
- 81285 words of memory out of 5000000
- 5609 multiletter control sequences out of 15000+600000
- 18446 words of font info for 27 fonts, out of 8000000 for 9000
+ 31965 string characters out of 6180978
+ 87293 words of memory out of 5000000
+ 5610 multiletter control sequences out of 15000+600000
+ 16408 words of font info for 25 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 25i,10n,43p,165b,263s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 25i,10n,43p,167b,276s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/dejavu/dejavus
-erif_t1-type1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/dejavu/dejavus
-erif_ts1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/dejavu/dejavusans_t
-1-type1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/dejavu/DejaVuSans
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/dejavu/DejaVuSerif.pfb>
-Output written on normal.pdf (2 pages, 28649 bytes).
+ans_ts1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/dejavu/dejavusans_t1
+-type1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/dejavu/DejaVuSans.
+pfb>
+Output written on normal.pdf (2 pages, 16849 bytes).
 PDF statistics:
- 24 PDF objects out of 1000 (max. 8388607)
- 17 compressed objects within 1 object stream
+ 19 PDF objects out of 1000 (max. 8388607)
+ 13 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
